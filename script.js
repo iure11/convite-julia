@@ -65,6 +65,8 @@
 
   function setStep(step, options = {}) {
     const normalized = step === "error" ? "error" : Math.max(0, Math.min(9, Number(step)));
+    $("#homeButton").hidden = normalized === 0;
+    $(".security-tag").hidden = normalized !== 0;
     stages.forEach((stage) => {
       const active = String(stage.dataset.step) === String(normalized);
       stage.classList.toggle("is-active", active);
