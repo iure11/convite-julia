@@ -47,6 +47,8 @@ button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px
 .eyebrow { font-size: 10px; letter-spacing: .2em; opacity: .65; }
 .brand { font: 600 17px Georgia, serif; }
 .security-tag { margin-left: auto; border: 1px solid rgba(255,255,255,.25); border-radius: 999px; padding: 7px 10px; font-size: 9px; font-weight: 800; letter-spacing: .14em; }
+.home-button { margin-left: auto; min-height: 36px; padding: 7px 11px; border: 2px solid var(--cream); border-radius: 999px; background: transparent; color: var(--cream); font-size: 9px; font-weight: 900; letter-spacing: .08em; cursor: pointer; }
+.home-button[hidden], .security-tag[hidden] { display: none !important; }
 
 .stage { display: none; flex: 1; }
 .stage.is-active { display: grid; place-items: center; animation: stageIn .45s ease both; }
@@ -291,9 +293,12 @@ h1 em { color: var(--red); font-weight: inherit; }
   z-index: 100;
   display: grid;
   place-items: center;
-  padding: 22px;
+  padding: max(12px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left));
   background: rgba(45, 20, 35, .82);
   opacity: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   backdrop-filter: blur(6px);
   transition: opacity .2s ease;
 }
@@ -303,7 +308,11 @@ h1 em { color: var(--red); font-weight: inherit; }
 .romantic-pop {
   position: relative;
   width: min(330px, 88vw);
+  max-height: calc(100svh - 24px);
+  max-height: calc(100dvh - 24px);
+  margin: auto;
   padding: 12px 12px 22px;
+  overflow-y: auto;
   text-align: center;
   background: #fff8e8;
   border: 3px solid #2d2130;
@@ -313,12 +322,13 @@ h1 em { color: var(--red); font-weight: inherit; }
   transition: transform .32s cubic-bezier(.17,.88,.3,1.34);
 }
 .is-showing .romantic-pop { transform: rotate(1deg) scale(1); }
-.romantic-pop img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 16px; }
+.romantic-pop img { display: block; width: 100%; height: min(52svh, 420px); object-fit: cover; border-radius: 16px; }
 .romantic-pop p { margin: 14px 0 4px; color: #2d2130; font: 900 20px/1.1 "Trebuchet MS", Arial, sans-serif; }
-.romantic-pop small { color: #755768; font-size: 12px; }
+.romantic-pop small { display: block; color: #755768; font-size: 12px; }
 .transition-button {
   width: 100%;
   min-height: 50px;
+  flex: 0 0 auto;
   margin-top: 14px;
   padding: 9px 12px 9px 16px;
   display: flex;
@@ -651,10 +661,19 @@ h1 em { color: var(--red); font-weight: inherit; }
   .success-actions > * { width: 100%; min-height: 44px; }
   .restart-button { margin-top: 5px; }
 
-  .romantic-pop { width: min(278px, 78vw); padding: 9px 9px 17px; border-radius: 22px; box-shadow: 7px 8px 0 #ffd447; }
+  .home-button { min-height: 34px; padding: 6px 9px; border-color: #2d2130; background: #ffd447; color: #2d2130; font-size: 8px; box-shadow: 3px 3px 0 #ff4f7b; }
+  .romantic-transition { place-items: start center; }
+  .romantic-pop { width: min(330px, calc(100vw - 28px)); max-height: calc(100svh - 24px); max-height: calc(100dvh - 24px); padding: 9px 9px 13px; border-radius: 22px; box-shadow: 7px 8px 0 #ffd447; }
+  .romantic-pop img { height: min(46svh, 320px); }
   .romantic-pop p { font-size: 17px; }
   .romantic-pop small { font-size: 10px; }
   .transition-button { min-height: 48px; margin-top: 11px; font-size: 9px; }
+}
+
+@media (max-height: 620px) {
+  .romantic-pop img { height: min(40svh, 230px); }
+  .romantic-pop p { margin-top: 9px; font-size: 15px; }
+  .transition-button { min-height: 44px; margin-top: 8px; }
 }
 
 @media (max-width: 360px) {
