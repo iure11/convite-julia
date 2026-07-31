@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <meta name="theme-color" content="#4f162a">
+    <meta name="description" content="Um documento confidencial sobre macarrão, rock, café e intenções suspeitamente boas.">
+    <meta property="og:title" content="Júlia recebeu um convite extremamente sério">
+    <meta property="og:description" content="Um documento confidencial sobre macarrão, rock, café e intenções suspeitamente boas.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/social-preview.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Júlia recebeu um convite extremamente sério">
+    <meta name="twitter:description" content="Um documento confidencial sobre macarrão, rock, café e intenções suspeitamente boas.">
+    <meta name="twitter:image" content="assets/social-preview.webp">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <title>Júlia recebeu um convite extremamente sério</title>
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="romantic-transition" id="romanticTransition" hidden role="dialog" aria-modal="true" aria-labelledby="romanticTransitionTitle">
+      <div class="romantic-pop">
+        <span class="float-heart heart-one" aria-hidden="true">♥</span>
+        <span class="float-heart heart-two" aria-hidden="true">♥</span>
+        <span class="float-heart heart-three" aria-hidden="true">♥</span>
+        <img src="assets/gatinho-coracoes.webp" width="627" height="640" alt="Gatinho com corações e uma rosa">
+        <p id="romanticTransitionTitle">Alerta: níveis suspeitos de fofura detectados.</p>
+        <small>O gatinho autorizou a abertura do convite.</small>
+        <button class="transition-button" id="continueRomanticTransition" type="button"><span>CONTINUAR O CONVITE</span><b aria-hidden="true">→</b></button>
+      </div>
+    </div>
+    <main class="app-shell" id="app">
+      <header class="topbar">
+        <div class="brand-mark" aria-hidden="true">🐾</div>
+        <div>
+          <p class="eyebrow">ARQUIVO Nº 01-08</p>
+          <p class="brand">Operação: Convite</p>
+        </div>
+        <span class="security-tag">QUASE SECRETO</span>
+      </header>
+
+      <div class="progress-wrap" id="progressWrap" hidden>
+        <div class="progress-meta"><span id="progressLabel">Etapa 1 de 8</span><span id="progressPercent">12%</span></div>
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="12"><span id="progressBar"></span></div>
+      </div>
+
+      <section class="stage is-active opening-stage" data-step="0" aria-labelledby="openingTitle">
+        <div class="document opening-document">
+          <span class="tape tape-left" aria-hidden="true"></span>
+          <span class="paperclip" aria-hidden="true"></span>
+          <span class="mail-stamp" aria-hidden="true">ENTREGA<br>URGENTE<br>💌</span>
+          <div class="opening-grid">
+            <div class="opening-copy">
+              <p class="kicker"><span class="red-dot"></span> Protocolo secreto nº 01</p>
+              <h1 id="openingTitle">Tenho um convite para <em>você, Júlia</em>.</h1>
+              <p class="lead">Nada de formulário sem graça.</p>
+              <p class="body-copy">Isto aqui passou por um rigoroso processo de qualidade, coragem e um pouquinho de vergonha alheia.</p>
+              <div class="opening-actions">
+                <button class="primary-button" id="openInvitation" type="button">
+                  <span>ABRIR O CONVITE 💌</span><b aria-hidden="true">→</b>
+                </button>
+                <button class="secondary-button opening-suspicious" id="suspiciousButton" type="button" aria-expanded="false">ISSO PARECE SUSPEITO</button>
+              </div>
+              <p class="suspicion-reply" id="suspicionReply" hidden>Justo. Mas o setor de auditoria confirmou: é só um convite e algumas piadas ruins.</p>
+              <p class="microcopy">Tempo estimado: 1 minuto e algumas decisões importantes.</p>
+            </div>
+            <div class="photo-zone" aria-label="Identificação da convidada">
+              <span class="case-label">DESTINATÁRIA: JÚLIA</span>
+              <figure class="polaroid">
+                <img id="juliaPhoto" src="assets/julia.webp" onerror="this.onerror=null;this.src='assets/julia-placeholder.svg'" width="560" height="560" alt="Espaço reservado para uma foto de Júlia">
+                <figcaption>suspeita de ser muito legal</figcaption>
+              </figure>
+              <div class="round-stamp">100% PERSONALIZADO<br><strong>0% GOLPE</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stage" data-step="1" aria-labelledby="termsTitle">
+        <div class="document flow-document compact-document">
+          <div class="doc-heading">
+            <span class="section-number">01</span>
+            <div><p class="kicker">Termos quase jurídicos</p><h2 id="termsTitle">Antes de continuar…</h2></div>
+          </div>
+          <div class="notice-box">
+            <span class="notice-icon" aria-hidden="true">§</span>
+            <p>Este convite pode conter comida, conversa, piadas ruins e o Iure tentando agir naturalmente.</p>
+          </div>
+          <div class="choice-stack" id="termsActions">
+            <button class="primary-button wide" type="button" data-action="accept-terms"><span>LI E ACEITO OS RISCOS</span><b aria-hidden="true">→</b></button>
+            <button class="secondary-button wide" id="lawyerButton" type="button" data-action="lawyer">QUERO CHAMAR MEU ADVOGADO</button>
+          </div>
+          <div class="lawyer-result" id="lawyerResult" hidden>
+            <span class="mini-stamp">PARECER EMITIDO</span>
+            <p>Seu advogado analisou o caso e recomendou continuar. Ele também pediu uma sobremesa como honorário.</p>
+          </div>
+          <p class="legal-microcopy">Ao prosseguir, você não abre mão de nenhum direito. Inclusive do direito de rir deste documento.</p>
+        </div>
+      </section>
+
+      <section class="stage" data-step="2" aria-labelledby="catTitle">
+        <div class="document flow-document cat-document">
+          <div class="doc-heading">
+            <span class="section-number">02</span>
+            <div><p class="kicker">Protocolo felino</p><h2 id="catTitle">Teste obrigatório de compatibilidade</h2></div>
+          </div>
+          <p class="intro-copy">Você tem poucos segundos para reagir ao gatinho romântico. Não fui eu que fiz as regras.</p>
+          <div class="cat-layout">
+            <figure class="evidence-card">
+              <span class="evidence-label">PROVA A</span><span class="urgent-stamp">URGENTE</span>
+              <img src="assets/gatinho-romantico.webp" width="960" height="960" alt="Gatinho segurando uma rosa com uma frase divertida sobre reagir ao gatinho romântico">
+              <figcaption>EVIDÊNCIA Nº 07 — NÃO IGNORAR</figcaption>
+            </figure>
+            <div class="reaction-panel">
+              <p class="panel-label">Selecione sua reação oficial:</p>
+              <div class="option-list" role="radiogroup" aria-label="Reação ao gatinho">
+                <button class="select-option" type="button" role="radio" aria-checked="false" data-field="reaction" data-value="Aceito a flor 🌹"><span>Aceito a flor 🌹</span><i>○</i></button>
+                <button class="select-option" type="button" role="radio" aria-checked="false" data-field="reaction" data-value="Eu ri, mas achei fofo 😂"><span>Eu ri, mas achei fofo 😂</span><i>○</i></button>
+                <button class="select-option" type="button" role="radio" aria-checked="false" data-field="reaction" data-value="O gatinho me convenceu 🥹"><span>O gatinho me convenceu 🥹</span><i>○</i></button>
+              </div>
+              <p class="selection-feedback" id="reactionFeedback" aria-live="polite"></p>
+            </div>
+          </div>
+          <div class="stage-actions"><button class="back-button" type="button" data-back>← VOLTAR</button><button class="primary-button" type="button" data-next disabled><span>CONTINUAR</span><b>→</b></button></div>
+        </div>
+      </section>
+
+      <section class="stage" data-step="3" aria-labelledby="activityTitle">
+        <div class="document flow-document activity-document">
+          <div class="doc-heading heading-with-stamp">
+            <span class="section-number">03</span>
+            <div><p class="kicker">Alocação de recursos</p><h2 id="activityTitle">Escolha onde o investimento do Iure será aplicado</h2></div>
+            <span class="zero-cost-stamp">CUSTO PARA JÚLIA<br><strong>R$ 0,00</strong></span>
+          </div>
+          <p class="intro-copy">Após uma análise financeira extremamente irresponsável, três opções foram aprovadas. Você escolhe e o patrocinador oficial cuida da conta.</p>
+          <p class="program-note">Oferecimento: programa social <strong>Iure Paga e Não Reclama</strong>.</p>
+          <div class="activity-grid" role="radiogroup" aria-label="Escolha do rolê">
+            <button class="activity-card" type="button" role="radio" aria-checked="false" data-field="activity" data-value="Jantar/macarrão">
+              <span class="activity-icon" aria-hidden="true">🍝</span><span class="card-index">OPÇÃO 01</span><h3>JANTAR COM MACARRÃO</h3>
+              <p>Macarrão, conversa e o risco controlado de alguém sair com molho na roupa.</p>
+              <span class="card-seal">Carboidrato financiado pelo Iure</span>
+              <small>A conta fica com o patrocinador oficial. Sua carteira pode tirar a noite para refletir sobre a própria inutilidade.</small><i>○</i>
+            </button>
+            <button class="activity-card" type="button" role="radio" aria-checked="false" data-field="activity" data-value="Barzinho de rock">
+              <span class="activity-icon" aria-hidden="true">🎸</span><span class="card-index">OPÇÃO 02</span><h3>BARZINHO DE ROCK</h3>
+              <p>Rock, uma bebida gelada e avaliações desnecessariamente sérias sobre a playlist.</p>
+              <span class="card-seal">Volume alto, custo zero</span>
+              <small>Entrada, bebida sem álcool e opiniões sobre bandas ficam por conta do Iure. Você leva sua presença.</small><i>○</i>
+            </button>
+            <button class="activity-card" type="button" role="radio" aria-checked="false" data-field="activity" data-value="Cafeteria/Padoca">
+              <span class="activity-icon" aria-hidden="true">☕</span><span class="card-index">OPÇÃO 03</span><h3>CAFETERIA / PADOCA</h3>
+              <p>Café, pão de queijo, alguma coisa doce e uma conversa que pode durar mais que o planejado.</p>
+              <span class="card-seal">Café patrocinado e aprovado pelas avós</span>
+              <small>Café e acompanhamentos financiados pelo fundo nacional de boas intenções do Iure.</small><i>○</i>
+            </button>
+          </div>
+          <p class="selection-feedback" id="activityFeedback" aria-live="polite"></p>
+          <p class="legal-reminder">Reforçando por motivos jurídicos: você não vai gastar nada.</p>
+          <div class="stage-actions"><button class="back-button" type="button" data-back>← VOLTAR</button><button class="primary-button" type="button" data-next disabled><span>ESCOLHER O DIA</span><b>→</b></button></div>
+        </div>
+      </section>
+
+      <section class="stage" data-step="4" aria-labelledby="dateTitle">
+        <div class="document flow-document compact-document">
+          <div class="doc-heading"><span class="section-number">04</span><div><p class="kicker">Agenda oficial</p><h2 id="dateTitle">Quando este evento histórico deve acontecer?</h2></div></div>
+          <p class="intro-copy">Caso o dia 01 não funcione, o calendário aceitou negociar.</p>
+          <div class="date-options" role="radiogroup" aria-label="Escolha da data">
+            <button class="date-card" type="button" role="radio" aria-checked="false" data-date-mode="main"><span class="calendar-sheet"><b>AGO</b><strong>01</strong><small>SÁBADO</small></span><span><strong>Sábado, 01 de agosto</strong><small>de 2026 · data oficialmente sugerida</small></span><i>○</i></button>
+            <button class="date-card" type="button" role="radio" aria-checked="false" data-date-mode="other"><span class="calendar-sheet alt"><b>OUTRO</b><strong>?</strong><small>DIA</small></span><span><strong>Outro dia</strong><small>O calendário está aberto a contrapropostas.</small></span><i>○</i></button>
+          </div>
+          <div class="field-group" id="otherDateWrap" hidden><label for="otherDate">Escolha a nova data</label><input id="otherDate" type="date" inputmode="none"><p class="field-error" id="dateError" role="alert"></p></div>
+          <div class="stage-actions"><button class="back-button" type="button" data-back>← VOLTAR</button><button class="primary-button" type="button" data-next disabled><span>ESCOLHER HORÁRIO</span><b>→</b></button></div>
+        </div>
+      </section>
+
+      <section class="stage" data-step="5" aria-labelledby="timeTitle">
+        <div class="document flow-document compact-document">
+          <div class="doc-heading"><span class="section-number">05</span><div><p class="kicker">Controle de pontualidade</p><h2 id="timeTitle">Qual horário permite que o Iure tente parecer pontual?</h2></div></div>
+          <p class="intro-copy">A operação começa depois das 18h. Antes disso, ainda é território do expediente.</p>
+          <div class="time-grid" role="radiogroup" aria-label="Escolha do horário">
+            <button type="button" role="radio" aria-checked="false" data-time="18:00">18:00</button><button type="button" role="radio" aria-checked="false" data-time="18:30">18:30</button>
+            <button type="button" role="radio" aria-checked="false" data-time="19:00">19:00</button><button type="button" role="radio" aria-checked="false" data-time="19:30">19:30</button>
+            <button type="button" role="radio" aria-checked="false" data-time="20:00">20:00</button><button type="button" role="radio" aria-checked="false" data-time="20:30">20:30</button>
+            <button type="button" role="radio" aria-checked="false" data-time="21:00">21:00</button><button type="button" role="radio" aria-checked="false" data-time="21:30">21:30</button>
+            <button type="button" role="radio" aria-checked="false" data-time="22:00">22:00</button><button type="button" role="radio" aria-checked="false" data-time="other">OUTRO HORÁRIO</button>
+          </div>
+          <div class="field-group" id="otherTimeWrap" hidden><label for="otherTime">Informe um horário depois das 18h</label><input id="otherTime" type="time" min="18:00" step="300"><p class="field-error" id="timeError" role="alert"></p></div>
+          <div class="stage-actions"><button class="back-button" type="button" data-back>← VOLTAR</button><button class="primary-button" type="button" data-next disabled><span>ÚLTIMOS DETALHES</span><b>→</b></button></div>
+        </div>
+      </section>
+
+      <section class="stage" data-step="6" aria-labelledby="preferencesTitle">
+        <div class="document flow-document compact-document">
+          <div class="doc-heading"><span class="section-number">06</span><div><p class="kicker">Cláusulas opcionais</p><h2 id="preferencesTitle">Últimos detalhes da operação</h2></div></div>
+          <p class="intro-copy">Marque tudo que ajudar o departamento de planejamento a não improvisar demais.</p>
+          <fieldset class="preferences-list"><legend>Preferências opcionais</legend>
+            <label><input type="checkbox" value="Prefiro um lugar mais tranquilo"><span>Prefiro um lugar mais tranquilo</span></label>
+            <label><input type="checkbox" value="Pode ser surpresa"><span>Pode ser surpresa</span></label>
+            <label><input type="checkbox" value="Quero sobremesa"><span>Quero sobremesa</span></label>
+            <label><input type="checkbox" value="Não quero lugar muito cheio"><span>Não quero lugar muito cheio</span></label>
+            <label><input type="checkbox" value="Confio no seu gosto, por algum motivo"><span>Confio no seu gosto, por algum motivo</span></label>
+          </fieldset>
+          <div class="field-group"><label for="note">Alguma observação, exigência ou cláusula contratual?</label><textarea id="note" maxlength="250" rows="3" placeholder="Exemplo: sem coentro, por favor. Este é um assunto sério."></textarea><div class="field-meta"><span>Opcional</span><span id="noteCount">0/250</span></div></div>
+          <div class="stage-actions"><button class="back-button" type="button" data-back>← VOLTAR</button><button class="primary-button" type="button" data-next><span>REVISAR CONTRATO</span><b>→</b></button></div>
+        </div>
+      </section>
+
+      <section class="stage" data-step="7" aria-labelledby="reviewTitle">
+        <div class="document flow-document review-document">
+          <div class="contract-top"><div><p class="kicker">Documento para conferência</p><h2 id="reviewTitle">CONTRATO PROVISÓRIO DO ROLÊ</h2></div><span class="contract-id">REF. 01/08/2026</span></div>
+          <div class="contract-grid">
+            <div class="contract-main"><dl class="summary-list">
+              <div><dt>Convidada</dt><dd>Júlia</dd></div><div><dt>Responsável pela operação</dt><dd>Iure</dd></div>
+              <div><dt>Reação ao gatinho</dt><dd id="summaryReaction">—</dd></div>
+              <div><dt>Rolê escolhido</dt><dd id="summaryActivity">—</dd><button type="button" data-edit="3">EDITAR</button></div>
+              <div><dt>Data</dt><dd id="summaryDate">—</dd><button type="button" data-edit="4">EDITAR</button></div>
+              <div><dt>Horário</dt><dd id="summaryTime">—</dd><button type="button" data-edit="5">EDITAR</button></div>
+              <div><dt>Preferências</dt><dd id="summaryPreferences">—</dd><button type="button" data-edit="6">EDITAR</button></div>
+              <div><dt>Observação</dt><dd id="summaryNote">—</dd></div>
+            </dl></div>
+            <aside class="finance-box"><span class="mini-stamp">SETOR FINANCEIRO</span><p>Responsável financeiro</p><strong>IURE</strong><p>Valor estimado para Júlia</p><strong class="price">R$ 0,00</strong><span class="exempt-stamp">CONVIDADA ISENTA<br>DE PAGAMENTO</span></aside>
+          </div>
+          <div class="clauses"><p><strong>Cláusula financeira:</strong> Júlia está expressamente proibida de se preocupar com a conta. Tentativas de pagamento poderão ser recusadas com educação e argumentos jurídicos inventados na hora.</p><p><strong>Multa por cancelamento:</strong> um café e uma justificativa minimamente convincente. <small>(Isso é uma brincadeira. Este departamento não aplica multas.)</small></p></div>
+          <div class="hold-wrap"><button class="hold-button" id="holdButton" type="button" aria-describedby="holdHelp"><span class="hold-progress" id="holdProgress"></span><span class="hold-label">SEGURAR PARA CONFIRMAR</span><b>1,2s</b></button><p id="holdHelp">Segure com toque ou mouse. Pelo teclado, mantenha Enter ou Espaço pressionado.</p></div>
+          <div class="stage-actions single-back"><button class="back-button" type="button" data-back>← VOLTAR E CONFERIR</button></div>
+        </div>
+      </section>
+
+      <section class="stage" data-step="8" aria-labelledby="sendingTitle">
+        <div class="document flow-document status-document">
+          <div class="loader-seal" aria-hidden="true"><span></span><strong>I</strong></div>
+          <p class="kicker">Protocolo em andamento</p><h2 id="sendingTitle">Enviando para o departamento responsável…</h2>
+          <p class="sending-message" id="sendingMessage" aria-live="polite">Consultando o gatinho…</p>
+          <div class="sending-track"><span></span></div>
+        </div>
+      </section>
+
+      <section class="stage" data-step="9" aria-labelledby="successTitle">
+        <div class="confetti" aria-hidden="true"></div>
+        <div class="document flow-document success-document">
+          <span class="success-stamp">APROVADO</span>
+          <p class="kicker">Operação concluída</p><h2 id="successTitle">ROLÊ CONFIRMADO E PATROCÍNIO APROVADO</h2>
+          <p id="successCopy">Suas escolhas foram registradas. Agora o Iure precisa cumprir suas funções como organizador e patrocinador oficial desta operação.</p>
+          <div class="success-summary"><div><span>ROLÊ</span><strong id="successActivity">—</strong></div><div><span>DATA</span><strong id="successDate">—</strong></div><div><span>HORÁRIO</span><strong id="successTime">—</strong></div><div><span>CUSTO PARA JÚLIA</span><strong>R$ 0,00</strong></div></div>
+          <div class="success-actions"><button class="primary-button" type="button" id="calendarButton"><span>ADICIONAR AO CALENDÁRIO</span><b>＋</b></button><a class="secondary-button" id="whatsappButton" target="_blank" rel="noopener">MANDAR MENSAGEM PARA O IURE</a><button class="secondary-button" type="button" data-action="review-again">REVER O CONVITE</button></div>
+          <button class="restart-button" type="button" data-action="restart">Recomeçar convite</button>
+        </div>
+      </section>
+
+      <section class="stage" data-step="error" aria-labelledby="errorTitle">
+        <div class="document flow-document status-document error-document"><span class="error-mark">!</span><p class="kicker">Falha de comunicação</p><h2 id="errorTitle">Parece que o pombo-correio digital se perdeu.</h2><p id="errorCopy">Você pode tentar novamente ou avisar o Iure pelo WhatsApp.</p><div class="choice-stack"><button class="primary-button wide" type="button" data-action="retry"><span>TENTAR NOVAMENTE</span><b>↻</b></button><a class="secondary-button wide" id="fallbackWhatsapp" target="_blank" rel="noopener">AVISAR PELO WHATSAPP</a><button class="secondary-button wide" type="button" data-action="back-review">VOLTAR E CONFERIR</button></div></div>
+      </section>
+
+      <div class="live-region" id="liveRegion" aria-live="polite" aria-atomic="true"></div>
+    </main>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

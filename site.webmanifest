@@ -1,0 +1,11 @@
+{
+  "name": "Um convite extremamente sério para Júlia",
+  "short_name": "Convite Júlia",
+  "description": "Um documento confidencial sobre macarrão, rock, café e intenções suspeitamente boas.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7efdf",
+  "theme_color": "#4f162a",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
